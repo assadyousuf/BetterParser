@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD1817F323863F9A0046C8CE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD1817F223863F9A0046C8CE /* main.cpp */; };
+		AD181804238640120046C8CE /* inputbuf.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD1817FA238640110046C8CE /* inputbuf.cc */; };
+		AD181805238640120046C8CE /* compiler.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD1817FB238640110046C8CE /* compiler.cc */; };
+		AD181806238640120046C8CE /* lexer.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD1817FC238640110046C8CE /* lexer.cc */; };
+		AD181807238640120046C8CE /* ir_debug.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD181801238640120046C8CE /* ir_debug.cc */; };
+		AD181808238640120046C8CE /* demo.cc in Sources */ = {isa = PBXBuildFile; fileRef = AD181803238640120046C8CE /* demo.cc */; };
+		AD18180B2386403D0046C8CE /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD1818092386403D0046C8CE /* Parser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +29,19 @@
 
 /* Begin PBXFileReference section */
 		AD1817EF23863F9A0046C8CE /* BetterParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BetterParser; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD1817F223863F9A0046C8CE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AD1817F9238640110046C8CE /* ir_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ir_debug.h; sourceTree = "<group>"; };
+		AD1817FA238640110046C8CE /* inputbuf.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inputbuf.cc; sourceTree = "<group>"; };
+		AD1817FB238640110046C8CE /* compiler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compiler.cc; sourceTree = "<group>"; };
+		AD1817FC238640110046C8CE /* lexer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexer.cc; sourceTree = "<group>"; };
+		AD1817FD238640120046C8CE /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		AD1817FE238640120046C8CE /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		AD1817FF238640120046C8CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD181800238640120046C8CE /* inputbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inputbuf.h; sourceTree = "<group>"; };
+		AD181801238640120046C8CE /* ir_debug.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ir_debug.cc; sourceTree = "<group>"; };
+		AD181802238640120046C8CE /* compiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		AD181803238640120046C8CE /* demo.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = demo.cc; sourceTree = "<group>"; };
+		AD1818092386403D0046C8CE /* Parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
+		AD18180C238640560046C8CE /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +74,19 @@
 		AD1817F123863F9A0046C8CE /* BetterParser */ = {
 			isa = PBXGroup;
 			children = (
-				AD1817F223863F9A0046C8CE /* main.cpp */,
+				AD1817FD238640120046C8CE /* CMakeLists.txt */,
+				AD1817FB238640110046C8CE /* compiler.cc */,
+				AD181802238640120046C8CE /* compiler.h */,
+				AD181803238640120046C8CE /* demo.cc */,
+				AD1817FA238640110046C8CE /* inputbuf.cc */,
+				AD181800238640120046C8CE /* inputbuf.h */,
+				AD181801238640120046C8CE /* ir_debug.cc */,
+				AD1817F9238640110046C8CE /* ir_debug.h */,
+				AD1817FC238640110046C8CE /* lexer.cc */,
+				AD1817FE238640120046C8CE /* lexer.h */,
+				AD1817FF238640120046C8CE /* README.md */,
+				AD1818092386403D0046C8CE /* Parser.cpp */,
+				AD18180C238640560046C8CE /* Parser.h */,
 			);
 			path = BetterParser;
 			sourceTree = "<group>";
@@ -119,7 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1817F323863F9A0046C8CE /* main.cpp in Sources */,
+				AD181808238640120046C8CE /* demo.cc in Sources */,
+				AD181807238640120046C8CE /* ir_debug.cc in Sources */,
+				AD181806238640120046C8CE /* lexer.cc in Sources */,
+				AD181805238640120046C8CE /* compiler.cc in Sources */,
+				AD18180B2386403D0046C8CE /* Parser.cpp in Sources */,
+				AD181804238640120046C8CE /* inputbuf.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
